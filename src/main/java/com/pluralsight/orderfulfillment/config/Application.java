@@ -1,5 +1,6 @@
 package com.pluralsight.orderfulfillment.config;
 
+
 import org.springframework.context.annotation.*;
 
 /**
@@ -13,4 +14,5 @@ import org.springframework.context.annotation.*;
 @PropertySource("classpath:order-fulfillment.properties")
 public class Application {
 
+    
 }

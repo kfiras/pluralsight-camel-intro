@@ -63,7 +63,6 @@ public class NewOrderRetrievalCommand implements FulfillmentCommand {
       // five order entries in order of the time it was placed.
       List<Order> newOrders = orderService.getOrderDetails(OrderStatus.NEW,
             fetchSize);
-
       // 3 - Mark the orders as in progress so they are not retrieved again by a
       // new processor.
       orderService.processOrderStatusUpdate(newOrders, OrderStatus.PROCESSING);

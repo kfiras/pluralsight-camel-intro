@@ -7,7 +7,7 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://central.maven.org/maven2/</url>
+			<url>https://repo.maven.apache.org/maven2/</url>
 		</repository>
  	</repositories>
 
@@ -16,9 +16,77 @@
 	<version>1.0-SNAPSHOT</version>
 
     <dependencies>
-
+        <!--  Google -->
+        <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>1.7.1</version>
+        </dependency>
+        <!-- Camel dependencies -->
+        <dependency>
+           <groupId>org.apache.camel</groupId>
+           <artifactId>camel-csv</artifactId>
+           <version>2.14.1</version>
+        </dependency>
+        <dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-ftp</artifactId>
+			<version>2.14.1</version>
+		</dependency>
+        <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-http4</artifactId>
+          <version>2.14.1</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-pool</artifactId>
+          <version>5.10.0</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-camel</artifactId>
+          <version>5.10.0</version>
+        </dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+			<version>2.14.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-javaconfig</artifactId>
+			<version>2.14.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test-spring</artifactId>
+			<version>2.14.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+           <groupId>org.apache.camel</groupId>
+           <artifactId>camel-sql</artifactId>
+           <version>2.14.1</version>
+        </dependency>
+		
     	<!-- SPRING FRAMEWORK -->
-
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.0.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.0.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.0.4.RELEASE</version>
+		</dependency>
         <!-- Spring framework core dependency minus commons logging in favor of SLF4J -->
         <dependency>
         	<groupId>org.springframework</groupId>
@@ -247,7 +315,11 @@
 			<version>1.9.0</version>
 			<scope>test</scope>
 		</dependency>
-
+        <dependency>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-impl</artifactId>
+          <version>2.2.6</version>
+         </dependency>
     </dependencies>
 
     <build>
@@ -337,6 +409,23 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+                <execution>
+                    <id>xjc</id>
+                    <goals>
+                        <goal>xjc</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <!-- The package of your generated sources -->
+                <packageName>com.pluralsight.orderfulfillment.generated</packageName>
+            </configuration>
+        </plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
