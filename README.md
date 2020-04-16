@@ -162,6 +162,9 @@ If you want to run order processing, click Orders -> Process Orders
 
 If you want to reset the orders back to new status, click Orders -> Reset Orders
 
+``` If your project does not load in Tomcat, repeat step 12 above. Maven Dependencies sometimes disappear when
+    updating the project and it needs to be added ```
+
 ## Contact Information
 
 If you have any questions, please feel free to contact me:
