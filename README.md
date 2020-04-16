@@ -123,6 +123,20 @@ I used Hawt.io version 1.4.14. Below are instructions for installation:
 5. I added the project to Tomcat in Eclipse (See section **Adding a Project to Tomcat**)
 6. You can then verify the installation from http://localhost:8080/hawtio-default-1.4.14
 
+### Fulfillment Center One service Installation ###
+
+This service was created to simulate a business web service to be used as an endpoint for the
+the Order Fulfillment project. To install it, follow steps below:
+
+1. git clone the service from https://github.com/mikevoxcap/fulfillmentcenterone-service.git
+2. You can follow directions on README page for this service if you want to run it
+   as standalone. If so, you can skip rest of these steps 
+3. Add the project to Eclipse
+4. In Eclipse, click Run -> Run Configurations. You should see a Maven Build in the list of the left
+5. Browse workspace to select the base directory of this service project
+6. Enter **exec:java** in the Goals field
+7. Click Apply and Run
+
 ### Order Fulfillment Project Installation
 
 Below are instructions for getting the Order Fulfillment Processor running in Eclipse:
