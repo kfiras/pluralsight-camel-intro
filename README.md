@@ -39,10 +39,11 @@ Get the latest Eclipse. You can find the download for Eclipse here:
 
 ### Maven
 
-After installation, you will need to configure your environment variables based on your OS. You can also skip installation of Maven. If you are not using Eclipse or an IDE with Maven plugin, you can download Maven here:
+You skip installation of Maven if you are using Eclipse or IDE with Maven plugin. If you are not using Eclipse or an IDE with Maven plugin, you can download Maven here:
 
    http://maven.apache.org/download.cgi
 
+After installation, you will need to configure your environment variables based on your OS.
 
 ### PostgreSQL
 
