@@ -15,7 +15,7 @@ was developed using the following:
 ..* PostgreSQL 9.3
 ..* Apache Tomcat 7.0.54
 ..* Apache ActiveMQ 5.10.0
-..* Apache Camel 2.13.2
+..* Apache Camel 2.14.1
 ..* Hawt.io 1.4.14
 
 ## Component Installation
