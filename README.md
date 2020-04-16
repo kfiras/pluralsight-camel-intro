@@ -59,9 +59,9 @@ The scripts to create the database for the case study project can be found in th
 
 Scripts include:
 
-..* create-orders-db.sql = Creates the login, database and schema for the project.
-..* create-orders.sql = Drops and re-creates the database table schema
-..* drop-orders-db.sql = Drops the orders database
+* create-orders-db.sql = Creates the login, database and schema for the project.
+* create-orders.sql = Drops and re-creates the database table schema
+* drop-orders-db.sql = Drops the orders database
 
 The script to load initial data can be found in the project directory:
 
