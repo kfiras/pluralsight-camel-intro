@@ -165,11 +165,3 @@ If you want to reset the orders back to new status, click Orders -> Reset Orders
 ### Note
 **_If your project does not load in Tomcat in Eclipse, repeat step 12 above. Maven Dependencies sometimes disappear when
 updating the project and it needs to be added_**
-
-## Contact Information
-
-If you have any questions, please feel free to contact me:
-
-Michael Hoffman
-mike@michaelhoffmaninc.com
-@mhi_inc
