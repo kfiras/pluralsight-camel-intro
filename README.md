@@ -33,19 +33,16 @@ Following installation, you will need to configure your environment variables ba
 
 ### Eclipse
 
-My preference for an integrated development environment is Eclipse. I am currently developing using Eclipse Kepler. You can 
-find the download for Eclipse here:
+Get the latest Eclipse. You can find the download for Eclipse here:
 
-   http://www.eclipse.org/kepler/
+   http://www.eclipse.org/downloads
 
 ### Maven
 
-I use Apache Maven for build and dependency management. You can download Maven here:
+After installation, you will need to configure your environment variables based on your OS. You can also skip installation of Maven. If you are not using Eclipse or an IDE with Maven plugin, you can download Maven here:
 
    http://maven.apache.org/download.cgi
 
-After installation, you will need to configure your environment variables based on your OS. You can also skip installation of 
-Maven and use the Eclipse Maven plug-in if you are developing with Eclipse as your IDE.
 
 ### PostgreSQL
 
