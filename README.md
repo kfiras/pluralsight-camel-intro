@@ -94,7 +94,7 @@ I used Apache Tomcat 7.0.54 as a server runtime in Eclipse. Below are instructio
 7. Select Tomcat 9.0 and click next
 8. Enter the installation directory you unzipped Tomcat to and click Finish
 
-## Adding a project to to Tomcat
+#### Adding a project to to Tomcat
 
 1. The "Servers" view in Eclipse is by default at the bottom part of the screen
 2. If you don't see "Servers", select Window -> Show View -> Servers
@@ -119,7 +119,7 @@ I used Hawt.io version 1.4.14. Below are instructions for installation:
 2. In Eclipse, I selected the File -> import menu, then selected Web -> WAR
 3. I selected the hawt.io WAR file I downloaded and then selected next
 4. I kept all the selections unchecked and clicked finish to import the WAR.
-5. I added the project to Tomcat in Eclipse
+5. I added the project to Tomcat in Eclipse (See section **Adding a Project to Tomcat**)
 6. You can then verify the installation from http://localhost:8080/hawtio-default-1.4.14
 
 ### Order Fulfillment Project Installation
