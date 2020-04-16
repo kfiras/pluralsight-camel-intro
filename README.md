@@ -7,7 +7,7 @@ Pluralsight's Introduction to Integration with Apache Camel. The case study is a
 will be able to follow along with the course using this case study project as the base for demonstrations. The case study 
 was developed using the following:
 
-* Implemented on Windows 8.1, 64-bit
+* Windows 10, 64-bit
 * Eclipse
 * JDK 1.7.0_45
 * Maven 3
