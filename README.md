@@ -12,8 +12,8 @@ was developed using the following:
 * JDK 1.7.0_45
 * Maven 3
 * Spring 4
-* PostgreSQL 9.3
-* Apache Tomcat 7.0.54
+* PostgreSQL 9.5
+* Apache Tomcat 9.0
 * Apache ActiveMQ 5.10.0
 * Apache Camel 2.14.1
 * Hawt.io 1.4.14
@@ -88,9 +88,18 @@ I used Apache Tomcat 7.0.54 as a server runtime in Eclipse. Below are instructio
 1. Download Tomcat 7 from http://tomcat.apache.org/
 2. Unzip the file to a directory on your hard drive
 3. In Eclipse, click the Window -> Preference menu and then select Server -> Runtime Environments from the Preferences popup
-4. Click the Add button.
-5. Select Tomcat 7 and click next
-6. Enter the installation directory you unzipped Tomcat to and click Finish
+4. You can search for "server" in the search box of the preferences popup
+5. Highlight "Runtime Environments" under "Server"
+6. Click the Add button.
+7. Select Tomcat 9.0 and click next
+8. Enter the installation directory you unzipped Tomcat to and click Finish
+
+## Adding a project to to Tomcat
+
+1. The "Servers" view in Eclipse is by default at the bottom part of the screen
+2. If you don't see "Servers", select Window -> Show View -> Servers
+3. Right click on Tomcat server and select "Add and Remove"
+4. Highlight project you want to add, click "Add" and click "finish"
 
 ### Apache ActiveMQ
 
